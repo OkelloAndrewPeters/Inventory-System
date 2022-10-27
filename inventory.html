@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Inventory Page</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+	<div class="container vh-100">
+		<div class="row justify-content-center h-100">
+			  <div class="card w-25 my-auto shadow">
+			  	<div class="card-header text-center bg-primary text-white">
+			  		<h2>Create Inventory</h2>
+			  	</div>
+			  	<div class="card-body">
+
+			  		<form method="post" action="inventory.php">
+			  			<div class="form-group">
+			  				<label for="item">Item Name:</label>
+			  			    <input type="text" class="form-control" name="item" id="item" />
+			  			</div>
+			  			<div class="form-group">
+			  				<label for="modal">Modal:</label>
+			  			    <input type="text" class="form-control" name="modal" id="modal" />
+			  			</div>
+			  			<div class="form-group">
+			  				<label for="status">Status:</label>
+			  			    <input type="text" class="form-control" name="status" id="status" />
+			  			</div>
+			  			<div class="form-group">
+			  				<label for="doa">Date of Aquisition:</label>
+			  			    <input type="date" class="form-control" name="date_of_aquisition" id="doa" />
+			  			</div>
+			  			<div class="form-group">
+			  				<label for="total">Total:</label>
+			  			    <input type="number" class="form-control" name="total" id="total" />
+			  			</div>
+			  			<div>
+			  				<input type="submit" name="inventoryBtn" class="btn btn-primary w-100" value="create inventory">
+			  			</div>		
+			  		</form>
+			  	</div>
+			  	<div class="card-footer text-right">
+			  		<small>&copy Engineer Andrew</small>
+			  		<small><a href="sidebar.php" style="text-decoration: none; color: blueviolet;">Back To Dashboard</a></small>
+			  	</div>
+			  </div>
+
+		</div>
+	</div>
+</body>
+</html>
